@@ -1,4 +1,25 @@
-/* Reset default browser styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .titular_name {
+        font-size: 40px;
+    }
+
+    .section {
+        padding: 30px 10px;
+    }
+
+    .certificate img {
+        height: auto;
+        max-width: 100%;
+    }
+
+    .intro_lines {
+        font-size: 18px;
+    }
+}/* Reset default browser styles */
 .intro_lines{
   margin: 0;
   font-family: 'playfair display' , serif;
