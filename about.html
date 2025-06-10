@@ -6,48 +6,88 @@
     <title>About</title>
     <style>
 
-      body{
-        background: url("about.jpg") no-repeat center center fixed;
-        background-size: cover;
-        position: relative;
-        color: #f5f5f5;
-        font-family: 'Inter', sans-serif;
-        line-height: 1.6;
-        padding: 20px;
-        color: whitesmoke;
-      }
+     body {
+  background: url("about.jpg") no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  color: whitesmoke;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+}
 
-      .ab_heading {
+.ab_heading {
+  padding-left: 20px;
+  text-align: center;
+  color: #ffe4b5;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 50px;
+}
 
-        Padding-left: 20px;
-        text-align:center;
-        color: #ffe4b5;
-        font-family:'Times New Roman', Times, serif;
-        font-weight: bold;
-        font-size: 50px;
+.intro {
+  text-align: center;
+  font-size: 40px;
+}
 
-      }
-      .intro{
-        text-align:center;
-        font-size: 40px;
-      }
+.desc {
+  text-align: left;
+  font-weight: 500;
+  font-size: 20px;
+  color: whitesmoke;
+  padding: 10px;
+}
 
-      .desc{
-        text-align:left;
-        font-weight:500;
-        font size:28px;
-        color: whitesmoke;
-        padding-left:10px;
-        padding-right:10px;
-      } 
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
-      footer{
-        text-align:center;
-        color: black;
-        margin-top:250px;
+/* Image styling */
+.flex-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
 
-      }
-  </style>
+/* Footer styling */
+footer {
+  text-align: center;
+  color: black;
+  margin-top: 100px;
+}
+
+/* ----------------- RESPONSIVE CHANGES ----------------- */
+@media (max-width: 768px) {
+  .ab_heading {
+    font-size: 36px;
+  }
+
+  .intro {
+    font-size: 24px;
+  }
+
+  .desc {
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flex-container > div {
+    padding: 10px;
+  }
+
+  footer {
+    margin-top: 60px;
+  }
+}
+
      
 </head>
 
@@ -59,7 +99,8 @@
   </header>
   <main>
     
-  <div style="display: flex; align-items: center; justify-content: space-between;">
+ <div class="flex-container">
+
       <div style="flex: 1; padding: 20px;">
 
     <h2 class="intro">Hello, I am Piush Praharaj.</h2>
