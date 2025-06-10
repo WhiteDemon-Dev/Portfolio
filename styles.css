@@ -1,5 +1,35 @@
+/* Make nav links stack on small screens */
+nav ul {
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-}/* Reset default browser styles */
+/* Ensure responsiveness on small screens */
+@media (max-width: 768px) {
+  .titular_name {
+    font-size: 50px; /* smaller heading on mobile */
+    padding: 20px;
+  }
+
+  .intro_lines {
+    font-size: 18px;
+    padding-top: 20px;
+  }
+
+  nav ul li {
+    margin: 10px;
+  }
+
+  main {
+    padding: 0 10px;
+  }
+
+  footer {
+    margin-top: 100px;
+  }
+}
+
+/* Reset default browser styles */
 .intro_lines{
   margin: 0;
   font-family: 'playfair display' , serif;
